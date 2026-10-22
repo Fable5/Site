@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Моя страница</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1>Моё обучение веб-разработке</h1>
+    <p>Это моя первая веб-страница.</p>
+    <p>Я хочу научиться веб-разработке так как мне это интересно, и я хочу начать зарабатывать на этом</p>
+    <h2>Мои цели</h2>
+    <p>Научиться:</p>
+
+    <ul id="targets">
+        <li class="goal-card">Создавать сайты</li>
+        <li class="goal-card">Добавлять в них функционал</li>
+        <li class="goal-card">Выйти на первый заработок</li>
+    </ul>
+
+    <div class="centralDiv">
+        <p class="defaultText" id="targetPrompt">Добавить цель:</p>
+        <input type="text" id="newTarget">
+        <button id="addTarget" type="button">Создать</button>
+        <p id="addTargetInfo" class="defaultText"></p>
+    </div>
+    
+    
+    <section>
+        <h2>Задачи</h2>
+        <ul id="tasks"></ul>
+        <button id="loadTasks">Загрузить задачи</button>
+        <p id="loadComment"></p>
+    </section>
+
+    <h2>Обо мне</h2>
+
+    <div class="aboutMe">
+        <img src="https://thumb.wikimedia.org/wikipedia/ru/thumb/b/b9/%D0%9A%D0%BE%D1%88%D0%BA%D0%B0_%D0%92%D0%B8%D1%80%D0%B3%D0%BE.jpg/330px-%D0%9A%D0%BE%D1%88%D0%BA%D0%B0_%D0%92%D0%B8%D1%80%D0%B3%D0%BE.jpg?utm_source=ru.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"
+            alt="Изображение крутого кота" class="image"/>
+        <div>
+            <p>Я начинающий веб-разработчик. Я изучаю html и хочу создавать сайты для реальных заказов.</p>
+            <p id="I_learn">Я изучаю язык программирования!</p>
+        </div>
+    </div>
+    
+    <p>Мой любимый ресурс для обучения:</p>
+    <a href="https://developer.mozilla.org/ru/" target="_blank">MDN Web Docs</a>
+    <br>
+
+    <button class="openButton" type="button" id="openMoreInfoAboutMe">Подробнее</button>
+    <p class="hidden" id="hiddenAboutMe">Я надеюсь что скоро получу свой первый заказ!</p>
+    
+    <h2>Связаться со мной</h2>
+
+    <!-- Форма отправки сообщения -->
+    <form id="messageForm">
+        <label for="name">Ваше имя:</label>
+        <br>
+        <input type="text" id="name" name="name">
+        <br>
+
+        <label for="phoneNumber">Ваш номер телефона:</label>
+        <br>
+        <input type="tel" id="phoneNumber" name="phoneNumber">
+        <br>
+
+        <label for="email">Ваша электронная почта:</label>
+        <br>
+        <input type="email" id="email" name="email">
+        <br>
+
+        <label for="message">Сообщение:</label>
+        <div class="messageInput">
+            <textarea id="message" name="message" maxlength="200"></textarea>
+            <p class="defaultText" id="charCounter">Счётчик</p>
+        </div>
+
+        <p id="messageComment"></p>
+
+        <label for="messagePurpose">Цель вашего обращения:</label>
+        <br>
+        <select id="messagePurpose" name="purpose" required>
+            <option value="">Выберите вариант</option>
+            <option value="Site">Создание сайта</option>
+            <option value="Bot">Разработка бота</option>
+            <option value="Other">Другой вопрос</option>
+        </select>
+        <br>
+
+
+        <button class="submitButton" id="submitMessageButton" type="submit">Отправить</button>
+    </form>
+</body>
+
+</html>

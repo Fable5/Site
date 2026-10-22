@@ -1,0 +1,132 @@
+body{
+    background-color:darkslategrey;
+    color: snow;
+}
+
+h1{
+    color:snow;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+p{
+    color:bisque;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+a{
+    color:aqua;
+}
+
+form{
+    width: fit-content;
+    border: 3px black dashed;
+    padding: 10px;
+    margin: 20px auto;
+}
+
+.image{
+    width: 100%;
+    max-width: 330px;
+    height: auto;
+    display: block;
+}
+
+input{
+    margin-bottom: 10px;
+}
+
+select{
+    margin-bottom: 10px;
+}
+
+.submitButton{
+    background-color:rgb(0, 49, 147);
+    transition: background-color 0.3s;
+    color:aliceblue;
+    padding: 3px;
+    border-radius: 6px;
+    display: block;
+    margin: 0 auto;
+}
+
+.submitButton:hover{
+    background-color:rgb(77, 93, 232);
+}
+
+ul{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.goal-card{
+    padding: 20px 10px;
+    background-color: rgb(77, 149, 149);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 3px solid;
+    border-radius: 10px;
+}
+
+.aboutMe{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+@media (max-width: 600px){
+    h1{
+        font-size: 25px;
+    }
+    ul{
+        flex-direction: column;
+    }
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+    background-color: rgb(0, 147, 113);
+}
+
+.messageInput{
+    display: flex;
+    flex-direction: row;
+}
+
+.defaultText{
+    font-size: 14px;
+    color: aliceblue;
+}
+
+.centralDiv{
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
+
+.openButton{
+    text-decoration: underline;
+    font-size: 20px;
+    transition: color 0.3s;
+    border: none;
+    background: none;
+    margin: 10px 0;
+    color: rgb(201, 144, 255);
+}
+
+.openButton:hover{
+    color:rgb(144, 25, 255)
+}
