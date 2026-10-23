@@ -28,7 +28,7 @@ messageForm.addEventListener("submit", function(event){
     }else if(messageBox.value.trim().length == 0){
         messageComment.textContent = "Введите ваше сообщение!";
     }else{
-        messageComment.textContent = "Спасибо " + userName.value + "! Ваше сообщение отправлено!";
+        messageComment.textContent = "Спасибо " + userName.value + "! Ваше сообщение готово!";
     }
 })
 
